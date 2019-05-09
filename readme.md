@@ -7,6 +7,8 @@
 
 Lora network repeater project
 ======================================
+This fork purpose is based on the need of a gateway disconnected from internet or a local network that could repeat the messeges received from motes and increment the covered area. ACK solution is not implemented.
+
 
 1. Core program: lora_pkt_fwd
 -------------------------------
