@@ -6,11 +6,6 @@
 (______/|_____)_|_|_| \__)_____)\____)_| |_|
   (C)2013 Semtech-Cycleo
 
-Description:
-    Configure Lora concentrator and forward packets to a server
-    Use GPS for packet timestamping.
-    Send a becon at a regular interval without server intervention
-
 License: Revised BSD License, see LICENSE.TXT file include in the project
 Maintainer: Michael Coracin
 */
