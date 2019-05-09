@@ -5,12 +5,26 @@
 	(______/|_____)_|_|_| \__)_____)\____)_| |_|
 	  (C)2013 Semtech-Cycleo
 
-Lora network packet forwarder project
+Lora network repeater project
 ======================================
 
 1. Core program: lora_pkt_fwd
 -------------------------------
 
+This is a fork from the Semtech packet forwarder program. Change were maded:
+
+	- Only one thread for repeat messages.
+	- Status messeges via console.
+	- cutdown GPS functions.
+	- No UDP connection.
+	- No server comunication.
+	- Hardcoded TX power and frecuency.
+	- No ACK messages implemented.
+	- No JSON buffer.
+	- No beacon functions.
+
+Original program:
+	
 The packet forwarder is a program running on the host of a Lora gateway that
 forwards RF packets receive by the concentrator to a server through a IP/UDP
 link, and emits RF packets that are sent by the server. It can also emit a
@@ -238,7 +252,7 @@ maximum ratings or operation outside the specified range.
 SEMTECH PRODUCTS ARE NOT DESIGNED, INTENDED, AUTHORIZED OR WARRANTED TO BE 
 SUITABLE FOR USE IN LIFE-SUPPORT APPLICATIONS, DEVICES OR SYSTEMS OR OTHER 
 CRITICAL APPLICATIONS. INCLUSION OF SEMTECH PRODUCTS IN SUCH APPLICATIONS IS 
-UNDERSTOOD TO BE UNDERTAKEN SOLELY AT THE CUSTOMER’S OWN RISK. Should a 
+UNDERSTOOD TO BE UNDERTAKEN SOLELY AT THE CUSTOMERÂ’S OWN RISK. Should a 
 customer purchase or use Semtech products for any such unauthorized 
 application, the customer shall indemnify and hold Semtech and its officers, 
 employees, subsidiaries, affiliates, and distributors harmless against all 
