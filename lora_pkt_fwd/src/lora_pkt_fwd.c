@@ -1100,7 +1100,9 @@ void thread_repeat(void) {
             MSG("Size: %d\n", p->size);
 
             /* Building TX structure*/
-            tx_pkt.freq_hz = 902300000;          /*freq_hz*/
+            tx_pkt.freq_hz = 902300000;          /*freq_hz. In case of need to repeat in the same frecuency,
+                                                    replace constant with p->freq_hz.
+                                                   tx_pkt.freq_hz = p->freq_hz */
             tx_pkt.tx_mode = IMMEDIATE;
             tx_pkt.count_us = p->count_us;
             tx_pkt.rf_chain = 0;
